@@ -1,0 +1,15 @@
+{
+  "name": "work-history",
+  "description": "Work history management plugins for Claude Code",
+  "owner": {
+    "name": "Jaejun Lee",
+    "url": "https://github.com/cooco119"
+  },
+  "plugins": [
+    {
+      "name": "work-history",
+      "source": ".",
+      "description": "Load context on session start, track work autonomously, and maintain handoffs for seamless collaboration"
+    }
+  ]
+}

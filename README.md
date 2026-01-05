@@ -11,20 +11,29 @@ Claude Code plugin for work history management - load context on session start, 
 
 ## Installation
 
-### Project-Level (Recommended for team collaboration)
+### Via Claude Code CLI (Recommended)
 
 ```bash
-# Copy to your project
-cp -r work-history/ your-project/.claude/plugins/work-history/
+# Add marketplace and install
+/plugin marketplace add cooco119/claude-code-work-history-plugin
+/plugin install work-history
+
+# Or install directly from GitHub
+/plugin install https://github.com/cooco119/claude-code-work-history-plugin
+```
+
+### Project-Level (Team collaboration)
+
+```bash
+/plugin install https://github.com/cooco119/claude-code-work-history-plugin --scope project
 ```
 
 Storage location: `{project}/.claude/work-history/{USER}/`
 
-### Global (For personal use across all projects)
+### Global (Personal use across all projects)
 
 ```bash
-# Copy to global plugins
-cp -r work-history/ ~/.claude/plugins/work-history/
+/plugin install https://github.com/cooco119/claude-code-work-history-plugin --scope user
 ```
 
 Storage location: `~/.claude/plugins/work-history/data/{PATH_HASH}/`
@@ -59,7 +68,8 @@ Claude autonomously updates work history when:
 ```
 work-history/
 ├── .claude-plugin/
-│   └── plugin.json          # Plugin metadata
+│   ├── plugin.json          # Plugin metadata
+│   └── marketplace.json     # Marketplace configuration
 ├── hooks/
 │   ├── session-start.sh     # Context loading (Node.js)
 │   └── session-end.sh       # Handoff reminder (Node.js)
