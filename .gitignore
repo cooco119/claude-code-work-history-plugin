@@ -11,8 +11,8 @@ Thumbs.db
 *.swp
 *.swo
 
-# Plugin data (user-specific work history)
-.claude/work-history/
+# Plugin data (global install only - project-level is tracked for collaboration)
+# .claude/work-history/  # Uncomment for private work history
 data/
 
 # Lock files
