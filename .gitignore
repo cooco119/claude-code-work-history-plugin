@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Plugin data (user-specific work history)
+.claude/work-history/
+data/
+
+# Lock files
+*.lock
+
+# Local settings
+.claude/settings.local.json
