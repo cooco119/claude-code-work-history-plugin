@@ -4,17 +4,6 @@
   "description": "Work history management for Claude Code - load context on session start, track work autonomously, and maintain handoffs",
   "author": {
     "name": "Jaejun Lee",
-    "email": "markman0510@gmail.com",
-    "url": "https://github.com/cooco119"
-  },
-  "homepage": "https://github.com/cooco119/claude-code-work-history-plugin",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cooco119/claude-code-work-history-plugin.git"
-  },
-  "keywords": ["productivity", "context", "handoff", "collaboration", "work-history"],
-  "hooks": {
-    "SessionStart": ["./hooks/session-start.sh"],
-    "SessionEnd": ["./hooks/session-end.sh"]
+    "email": "markman0510@gmail.com"
   }
 }
