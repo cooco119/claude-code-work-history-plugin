@@ -1,15 +1,23 @@
 {
-  "name": "work-history",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "work-history-marketplace",
+  "version": "1.0.0",
   "description": "Work history management plugins for Claude Code",
   "owner": {
     "name": "Jaejun Lee",
-    "url": "https://github.com/cooco119"
+    "email": "markman0510@gmail.com"
   },
   "plugins": [
     {
       "name": "work-history",
+      "description": "Load context on session start, track work autonomously, and maintain handoffs for seamless collaboration",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jaejun Lee",
+        "email": "markman0510@gmail.com"
+      },
       "source": ".",
-      "description": "Load context on session start, track work autonomously, and maintain handoffs for seamless collaboration"
+      "category": "productivity"
     }
   ]
 }
