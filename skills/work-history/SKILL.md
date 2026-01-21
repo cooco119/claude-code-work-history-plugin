@@ -16,7 +16,7 @@ The plugin automatically detects the storage location:
 
 **Project-level install** (`.claude/plugins/work-history/`):
 ```
-{project}/.claude/work-history/{USER}/
+{project}/.work-history/{USER}/
 ├── index.md
 ├── YYYY-MM-DD-task-name.md
 └── completed/

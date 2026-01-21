@@ -28,7 +28,7 @@ Claude Code plugin for work history management - load context on session start, 
 /plugin install https://github.com/cooco119/claude-code-work-history-plugin --scope project
 ```
 
-Storage location: `{project}/.claude/work-history/{USER}/`
+Storage location: `{project}/.work-history/{USER}/`
 
 ### Global (Personal use across all projects)
 
@@ -124,6 +124,14 @@ No configuration required. The plugin automatically:
 - Detects installation type
 - Creates storage directories with proper permissions (0600/0700)
 - Initializes templates and index files
+
+## Migration from v0.x
+
+If you have existing data in `.claude/work-history/`, migrate it to the new location:
+
+```bash
+mv {project}/.claude/work-history {project}/.work-history
+```
 
 ## Security
 
