@@ -74,8 +74,10 @@ work-history/
 │   ├── session-start.sh     # Context loading (Node.js)
 │   └── session-end.sh       # Handoff reminder (Node.js)
 ├── skills/
-│   └── work-history/
-│       └── SKILL.md         # Autonomous management guide
+│   ├── work-history/
+│   │   └── SKILL.md         # Autonomous management guide
+│   └── project-init/
+│       └── SKILL.md         # Project setup and git backfill
 ├── lib/
 │   ├── storage.js           # Storage path logic
 │   └── lock.js              # Non-blocking file lock
